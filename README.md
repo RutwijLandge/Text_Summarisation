@@ -27,15 +27,10 @@ text\_summarization\_tool/
 ## ⚙️ Installation
 1. Clone the repository:
 ```bash
-git clone https://github.com/JayeshMahajan8055/Text_Summarization_Tool_-NLP-.git
+git clone https://github.com/RutwijLandge/Text_Summarizatio.git
 cd Text_Summarization_Tool_-NLP-
 ````
 
-2. Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
 
 ## 🖥️ Usage
 
@@ -75,4 +70,3 @@ Select:
 =======
 # Text_Summarisation
 Implemented a text summarization tool using BERT-based NLP models to generate concise and context-aware summaries from large documents.  Preprocessed text data using tokenization, stopword removal, and attention-based embeddings for improved accuracy.
->>>>>>> 64eabece58fbb55f15f3ac466734f3f354c4b489
