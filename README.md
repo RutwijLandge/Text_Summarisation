@@ -28,7 +28,7 @@ text\_summarization\_tool/
 1. Clone the repository:
 ```bash
 git clone https://github.com/RutwijLandge/Text_Summarizatio.git
-cd Text_Summarization_Tool_-NLP-
+cd Text_Summarization_Tool
 ````
 
 
