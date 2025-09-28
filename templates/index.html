@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Summarizer</h1>
+
+        <form method="POST">
+            <textarea name="text" rows="10" placeholder="Enter text here...">{{ request.form.text or '' }}</textarea><br>
+            <select name="summary_type">
+                <option value="extractive_nltk" {% if request.form.summary_type == 'extractive_nltk' %}selected{% endif %}>Extractive (NLTK)</option>
+                <option value="abstractive_bart" {% if request.form.summary_type == 'abstractive_bart' %}selected{% endif %}>Abstractive (BART)</option>
+            </select><br>
+            <button type="submit">Summarize</button>
+        </form>
+
+        {% if summary %}
+        <h2>Original Input:</h2>
+        <div class="result">{{ request.form.text }}</div>
+
+        <h2>Summary:</h2>
+        <div class="result">{{ summary }}</div>
+        {% endif %}
+    </div>
+</body>
+</html>
